@@ -1,0 +1,26 @@
+{
+	"name": "Jabas AI Wesbite",
+	"overrideCommand": false,
+	"service": "jabas-ai-web",
+	"dockerComposeFile": [
+		"./docker-compose.yaml",
+	],
+	"workspaceFolder": "/workspace",
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"terminal.integrated.shell.linux": "/bin/sh"
+			},
+			"extensions": [
+                "esbenp.prettier-vscode",
+                "rvest.vs-code-prettier-eslint",
+				"redhat.vscode-yaml"
+			]
+		}
+	},
+
+	"postCreateCommand": "sh .devcontainer/post-create.sh",
+	"remoteUser": "root",
+	"containerUser": "root",
+	"updateRemoteUserUID": true
+}

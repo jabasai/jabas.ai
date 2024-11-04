@@ -1,0 +1,13 @@
+version: '3.6'
+
+services:
+  jabas-ai-web:
+    image: jabas/devcontainer/jabas.ai:latest
+    build:
+      context: ../
+      dockerfile: Dockerfile
+    ports: 
+      - "${HTTP_PORT:-8080}:8080"
+    restart: always
+    environment:
+      - APP_ENV=production

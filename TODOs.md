@@ -4,3 +4,4 @@
 4) Fix the timeline
 5) Add teams and Jabas social links (or remove teams social links)
 6) Add content to serviecs and products 
+7) Add a docker and dev container 
