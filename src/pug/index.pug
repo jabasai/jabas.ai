@@ -82,7 +82,7 @@ html(lang='en')
                             | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
 
         // Portfolio Grid
-        section#portfolio.page-section.bg-light
+        section#portfolio.page-section.bg-light(hidden='true')
             .container
                 .text-center
                     h2.section-heading.text-uppercase Portfolio
@@ -161,7 +161,7 @@ html(lang='en')
                 .text-center
                     h2.section-heading.text-uppercase About
                     h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
-                ul.timeline
+                ul.timeline(hidden='true')
                     li
                         .timeline-image
                             img.rounded-circle.img-fluid(src='assets/img/about/1.jpg', alt='...')
@@ -220,160 +220,162 @@ html(lang='en')
                 .row
                     .col-lg-4
                         .team-member
-                            img.mx-auto.rounded-circle(src='assets/img/team/1.jpg', alt='...')
+                            img.mx-auto.rounded-circle(src='assets/img/team/mhanheide.jpg', alt='...')
                             h4 Marc Hanheide
-                            p.text-muted CEO
-                            a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Marc Hanheide Twitter Profile')
-                                i.fab.fa-twitter
-                            a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Marc HanheideFacebook Profile')
-                                i.fab.fa-facebook-f
-                            a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Marc Hanheide LinkedIn Profile')
+                            p.text-muted Team Lead
+                            //- a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Marc Hanheide Twitter Profile')
+                            //-     i.fab.fa-twitter
+                            //- a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Marc HanheideFacebook Profile')
+                            //-     i.fab.fa-facebook-f
+                            a.btn.btn-dark.btn-social.mx-2(href='https://www.linkedin.com/in/marc-hanheide/', aria-label='Marc Hanheide LinkedIn Profile')
                                 i.fab.fa-linkedin-in
                     .col-lg-4
                         .team-member
                             img.mx-auto.rounded-circle(src='assets/img/team/2.jpg', alt='...')
                             h4 Ibrahim Hroob
                             p.text-muted Senior Robotics Researcher
-                            a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Ibrahim Hroob Twitter Profile')
-                                i.fab.fa-twitter
-                            a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Ibrahim Hroob Facebook Profile')
-                                i.fab.fa-facebook-f
-                            a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Ibrahim Hroob LinkedIn Profile')
-                                i.fab.fa-linkedin-in
+                            //- a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Ibrahim Hroob Twitter Profile')
+                            //-     i.fab.fa-twitter
+                            //- a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Ibrahim Hroob Facebook Profile')
+                            //-     i.fab.fa-facebook-f
+                            //- a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Ibrahim Hroob LinkedIn Profile')
+                            //-     i.fab.fa-linkedin-in
                     .col-lg-4
                         .team-member
                             img.mx-auto.rounded-circle(src='assets/img/team/3.jpg', alt='...')
                             h4 Arshad Khan
                             p.text-muted Robotics Software Engineer
-                            a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Arshad Khan Twitter Profile')
-                                i.fab.fa-twitter
-                            a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Arshad Khan Facebook Profile')
-                                i.fab.fa-facebook-f
-                            a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Arshad Khan LinkedIn Profile')
-                                i.fab.fa-linkedin-in
+                            //- a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Arshad Khan Twitter Profile')
+                            //-     i.fab.fa-twitter
+                            //- a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Arshad Khan Facebook Profile')
+                            //-     i.fab.fa-facebook-f
+                            //- a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Arshad Khan LinkedIn Profile')
+                            //-     i.fab.fa-linkedin-in
                 .row
                     .col-lg-8.mx-auto.text-center
                         p.large.text-muted
                             | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
 
         // Clients
-        div.py-5
-            .container
-                .row.align-items-center
-                    .col-md-3.col-sm-6.my-3
-                        a(href='#!')
-                            img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/microsoft.svg', alt='...', aria-label='Microsoft Logo')
-                    .col-md-3.col-sm-6.my-3
-                        a(href='#!')
-                            img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/google.svg', alt='...', aria-label='Google Logo')
-                    .col-md-3.col-sm-6.my-3
-                        a(href='#!')
-                            img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/facebook.svg', alt='...', aria-label='Facebook Logo')
-                    .col-md-3.col-sm-6.my-3
-                        a(href='#!')
-                            img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/ibm.svg', alt='...', aria-label='IBM Logo')
+        //- div.py-5
+        //-     .container
+        //-         .row.align-items-center
+        //-             .col-md-3.col-sm-6.my-3
+        //-                 a(href='#!')
+        //-                     img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/microsoft.svg', alt='...', aria-label='Microsoft Logo')
+        //-             .col-md-3.col-sm-6.my-3
+        //-                 a(href='#!')
+        //-                     img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/google.svg', alt='...', aria-label='Google Logo')
+        //-             .col-md-3.col-sm-6.my-3
+        //-                 a(href='#!')
+        //-                     img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/facebook.svg', alt='...', aria-label='Facebook Logo')
+        //-             .col-md-3.col-sm-6.my-3
+        //-                 a(href='#!')
+        //-                     img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/ibm.svg', alt='...', aria-label='IBM Logo')
 
         // Contact
         section#contact.page-section
             .container
                 .text-center
                     h2.section-heading.text-uppercase Contact Us
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+                    h3.section-subheading.large Email us at 
+                        a(href='mailto:info@jabas.ai') info@jabas.ai
+                    
 
-                // * * * * * * * * * * * * * * *
-                // * * SB Forms Contact Form * *
-                // * * * * * * * * * * * * * * *
+                //- // * * * * * * * * * * * * * * *
+                //- // * * SB Forms Contact Form * *
+                //- // * * * * * * * * * * * * * * *
 
-                // This form is pre-integrated with SB Forms.
-                // To make this form functional, sign up at
-                // https://startbootstrap.com/solution/contact-forms
-                // to get an API token!
+                //- // This form is pre-integrated with SB Forms.
+                //- // To make this form functional, sign up at
+                //- // https://startbootstrap.com/solution/contact-forms
+                //- // to get an API token!
 
-                form#contactForm(data-sb-form-api-token='API_TOKEN')
-                    .row.align-items-stretch.mb-5
-                        .col-md-6
-                            .form-group
+                //- form#contactForm(data-sb-form-api-token='API_TOKEN')
+                //-     .row.align-items-stretch.mb-5
+                //-         .col-md-6
+                //-             .form-group
 
-                                // Name input
-                                input#name.form-control(
-                                    type='text',
-                                    placeholder='Your Name *',
-                                    data-sb-validations='required'
-                                )
-                                .invalid-feedback(data-sb-feedback='name:required')
-                                    | A name is required.
+                //-                 // Name input
+                //-                 input#name.form-control(
+                //-                     type='text',
+                //-                     placeholder='Your Name *',
+                //-                     data-sb-validations='required'
+                //-                 )
+                //-                 .invalid-feedback(data-sb-feedback='name:required')
+                //-                     | A name is required.
 
-                            .form-group
+                //-             .form-group
 
-                                // Email address input
-                                input#email.form-control(
-                                    type='email',
-                                    placeholder='Your Email *',
-                                    data-sb-validations='required,email'
-                                )
-                                .invalid-feedback(data-sb-feedback='email:required')
-                                    | An email is required.
-                                .invalid-feedback(data-sb-feedback='email:email')
-                                    | Email is not valid.
+                //-                 // Email address input
+                //-                 input#email.form-control(
+                //-                     type='email',
+                //-                     placeholder='Your Email *',
+                //-                     data-sb-validations='required,email'
+                //-                 )
+                //-                 .invalid-feedback(data-sb-feedback='email:required')
+                //-                     | An email is required.
+                //-                 .invalid-feedback(data-sb-feedback='email:email')
+                //-                     | Email is not valid.
 
-                            .form-group.mb-md-0
+                //-             .form-group.mb-md-0
 
-                                // Phone number input
-                                input#phone.form-control(
-                                    type='tel',
-                                    placeholder='Your Phone *',
-                                    data-sb-validations='required'
-                                )
-                                .invalid-feedback(data-sb-feedback='phone:required')
-                                    | A phone number is required.
+                //-                 // Phone number input
+                //-                 input#phone.form-control(
+                //-                     type='tel',
+                //-                     placeholder='Your Phone *',
+                //-                     data-sb-validations='required'
+                //-                 )
+                //-                 .invalid-feedback(data-sb-feedback='phone:required')
+                //-                     | A phone number is required.
 
-                        .col-md-6
-                            .form-group.form-group-textarea.mb-md-0
+                //-         .col-md-6
+                //-             .form-group.form-group-textarea.mb-md-0
 
-                                // Message input
-                                textarea#message.form-control(
-                                    placeholder='Your Message *',
-                                    data-sb-validations='required'
-                                )
-                                .invalid-feedback(data-sb-feedback='message:required')
-                                    | A message is required.
+                //-                 // Message input
+                //-                 textarea#message.form-control(
+                //-                     placeholder='Your Message *',
+                //-                     data-sb-validations='required'
+                //-                 )
+                //-                 .invalid-feedback(data-sb-feedback='message:required')
+                //-                     | A message is required.
 
-                    // Submit success message
-                    //
-                    // This is what your users will see when the form
-                    // has successfully submitted
+                //-     // Submit success message
+                //-     //
+                //-     // This is what your users will see when the form
+                //-     // has successfully submitted
 
-                    #submitSuccessMessage.d-none
-                        .text-center.text-white.mb-3
-                            .fw-bolder Form submission successful!
-                            | To activate this form, sign up at
-                            br
-                            a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
+                //-     #submitSuccessMessage.d-none
+                //-         .text-center.text-white.mb-3
+                //-             .fw-bolder Form submission successful!
+                //-             | To activate this form, sign up at
+                //-             br
+                //-             a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
 
-                    // Submit error message
-                    //
-                    // This is what your users will see when there is
-                    // an error submitting the form
+                //-     // Submit error message
+                //-     //
+                //-     // This is what your users will see when there is
+                //-     // an error submitting the form
 
-                    #submitErrorMessage.d-none
-                        .text-center.text-danger.mb-3 Error sending message!
+                //-     #submitErrorMessage.d-none
+                //-         .text-center.text-danger.mb-3 Error sending message!
 
-                    // Submit Button
-                    .text-center
-                        button#submitButton.btn.btn-primary.btn-xl.text-uppercase.disabled(type='submit') Send Message
+                //-     // Submit Button
+                //-     .text-center
+                //-         button#submitButton.btn.btn-primary.btn-xl.text-uppercase.disabled(type='submit') Send Message
 
         // Footer
         footer.footer.py-4
             .container
                 .row.align-items-center
                     .col-lg-4.text-lg-start
-                        | Copyright &copy; Your Website 2023
+                        | Copyright &copy; JABAS 2024
                     .col-lg-4.my-3.my-lg-0
-                        a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Twitter')
-                            i.fab.fa-twitter
-                        a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Facebook')
-                            i.fab.fa-facebook-f
-                        a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='LinkedIn')
+                        //- a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Twitter')
+                        //-     i.fab.fa-twitter
+                        //- a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Facebook')
+                        //-     i.fab.fa-facebook-f
+                        a.btn.btn-dark.btn-social.mx-2(href='https://www.linkedin.com/company/jabas/', aria-label='LinkedIn')
                             i.fab.fa-linkedin-in
                     .col-lg-4.text-lg-end
                         a.link-dark.text-decoration-none.me-3(href='#!') Privacy Policy
