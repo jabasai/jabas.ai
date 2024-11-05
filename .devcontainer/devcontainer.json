@@ -5,7 +5,7 @@
 	"dockerComposeFile": [
 		"./docker-compose.yaml",
 	],
-	"workspaceFolder": "/workspace",
+	"workspaceFolder": "/app",
 	"customizations": {
 		"vscode": {
 			"settings": {
