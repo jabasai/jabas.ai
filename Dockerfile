@@ -1,4 +1,4 @@
-FROM node:latest 
+FROM node:latest as base
 
 # Install dependencies
 RUN apt update && \
@@ -6,9 +6,13 @@ RUN apt update && \
     rm -rf /var/cache/apk/* && \
     rm -rf /usr/share/nginx/html/*
 
+FROM base as dep
 WORKDIR /app
+
 COPY package*.json ./
 RUN npm install
+
+FROM dep as full
 COPY . .
 RUN npm run build
 RUN npm install -g http-serve
