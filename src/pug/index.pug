@@ -37,8 +37,8 @@ html(lang='en')
                     ul.navbar-nav.text-uppercase.ms-auto.py-4.py-lg-0
                         li.nav-item
                             a.nav-link(href='#services') Services
-                        li.nav-item
-                            a.nav-link(href='#portfolio') Portfolio
+                        //- li.nav-item
+                        //-     a.nav-link(href='#portfolio') Portfolio
                         li.nav-item
                             a.nav-link(href='#about') About
                         li.nav-item
@@ -57,29 +57,40 @@ html(lang='en')
             .container
                 .text-center
                     h2.section-heading.text-uppercase Services
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+                    h3.section-subheading.text-muted 
                 .row.text-center
                     .col-md-4
                         span.fa-stack.fa-4x
                             i.fas.fa-circle.fa-stack-2x.text-primary
-                            i.fas.fa-shopping-cart.fa-stack-1x.fa-inverse
-                        h4.my-3 E-Commerce
+                            i.fas.fa-compass.fa-stack-1x.fa-inverse
+                        h4.my-3 Reliable Navigation
                         p.text-muted
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+                            | Advanced localisation algorithms  <br/>
+                            | Agricultural-specific motion planning  <br/>
+                            | Proven reliability in field conditions <br/>
+                            | Safety-first approach <br/>
+
                     .col-md-4
                         span.fa-stack.fa-4x
                             i.fas.fa-circle.fa-stack-2x.text-primary
-                            i.fas.fa-laptop.fa-stack-1x.fa-inverse
-                        h4.my-3 Responsive Design
+                            i.fas.fa-layer-group.fa-stack-1x.fa-inverse
+                        h4.my-3 Rapid Deployment
                         p.text-muted
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+                            | Quick integration with existing platforms  <br/>
+                            | Standardised interfaces <br/>
+                            | Efficient environment mapping <br/>
+                            | Remote support and monitoring <br/>
                     .col-md-4
                         span.fa-stack.fa-4x
                             i.fas.fa-circle.fa-stack-2x.text-primary
-                            i.fas.fa-lock.fa-stack-1x.fa-inverse
-                        h4.my-3 Web Security
+                            i.fas.fa-laptop-code.fa-stack-1x.fa-inverse
+                        h4.my-3 Fleet Management
                         p.text-muted
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+                            | AI-enabled coordination <br/>
+                            | Reduced human oversight <br/>
+                            | Real-time performance monitoring <br/>
+                            | Scalable operations <br/>
+
 
         // Portfolio Grid
         section#portfolio.page-section.bg-light(hidden='true')
@@ -155,11 +166,11 @@ html(lang='en')
                                 .portfolio-caption-heading Window
                                 .portfolio-caption-subheading.text-muted Photography
 
-        // About
+        // Our Story
         section#about.page-section
             .container
                 .text-center
-                    h2.section-heading.text-uppercase About
+                    h2.section-heading.text-uppercase Our Story
                     h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
                 ul.timeline(hidden='true')
                     li
@@ -167,11 +178,16 @@ html(lang='en')
                             img.rounded-circle.img-fluid(src='assets/img/about/1.jpg', alt='...')
                         .timeline-panel
                             .timeline-heading
-                                h4 2009-2011
-                                h4.subheading Our Humble Beginnings
+                                //- h4 2009-2011
+                                h4.subheading Problem Statement
                             .timeline-body
                                 p.text-muted
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+                                    //- ol 
+                                    span  Agricultural environments pose unique navigation challenges <br/>
+                                    span  SMEs waste resources reinventing navigation solutions<br/>
+                                    span  Current solutions require extensive human oversight<br/>
+
+                                        
                     li.timeline-inverted
                         .timeline-image
                             img.rounded-circle.img-fluid(src='assets/img/about/2.jpg', alt='...')
