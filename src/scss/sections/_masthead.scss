@@ -2,16 +2,27 @@
 // Masthead section styling
 //
 
+@keyframes header_bg_animation {
+    from {
+        background-position: -100% center;
+    }
+    to {
+        background-position: center center;
+    }
+}
+
 header.masthead {
     padding-top: 6rem + 4.5rem;
     padding-bottom: 6rem;
     text-align: center;
     color: $white;
-    background-image: url("../assets/img/header-bg.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
     background-size: cover;
+    transition: background-image 1s ease-in-out; // Smooth transition
+    animation: header_bg_animation 1s ease-in-out; // Apply sliding animation
+
 
     .masthead-subheading {
         font-size: 1.5rem;
@@ -19,14 +30,27 @@ header.masthead {
         line-height: 1.5rem;
         margin-bottom: 25px;
         font-family: $subheadings-font-family;
+        
+        // background-color: rgba(1, 53, 1, 0.25);  
+        // padding: 5px 10px;  
+        // display: inline-block; 
+        // border-radius: 5px;  
+
+ 
     }
 
     .masthead-heading {
-        font-size: 3.25rem;
-        font-weight: 700;
+        font-size: 2.25rem;
+        // font-weight: 700;
         line-height: 3.25rem;
         margin-bottom: 2rem;
         font-family: $headings-font-family;
+
+        // background-color: rgba(1, 53, 1, 0.25);  
+        // padding: 5px 10px;  
+        // display: inline-block; 
+        // border-radius: 5px;  
+ 
     }
 }
 
