@@ -1,33 +1,22 @@
-.solution {
 
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    
+.solution-img {
+    width: 105%;
+    height: 105%;
+    border: 0.25rem solid fade-out($info, 0.9);
+}
+
+.solution-content { 
+    color: $primary;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.5;
     text-align: center;
-    color: $dark;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
-    background-size: cover;
-    background-color: $dark;
-    // background-image: url("../assets/img/bg/header-bg-7.png");
- 
-    .solution-heading { 
-        color: $dark;
-        font-size: 2.75rem;
-        padding-bottom: 2rem;
-    }
+    padding: 0.5rem 7.5rem;
+    padding-top: 0;
 
-    .solution-content { 
-        font-size: 1.25rem;
-        padding: 2rem;
-        color : $info;
-
-    }
-
-    .solution-img { 
-        width: 30rem;
-        border: 0.25rem solid fade-out($dark, 0.9);
-    }
-
+    // background-color: rgba(aliceblue, 0.4); 
+    // padding: 5px 10px;  
+    // display: inline-block; 
+    // border-color: aliceblue;
+    // border-radius: 10px;  
 }

@@ -83,18 +83,22 @@ html(lang='en')
         // Solution 
         section#solution.page-section.bg-dark
             .container-fluid
-                h2.section-heading.text-center.text-primary.text-uppercase Our Solution
-                .row.text-center    
-                    .col-md-4
-                        span.muted-text
-                            | <br> Agricultural environments pose unique navigation challenges
-                    .col-md-4
-                        span.muted-text 
-                            | <br> SMEs waste resources reinventing navigation solutions
-                    .col-md-4
-                        span.muted-text 
-                            | <br> Current solutions require extensive human oversight
-                    
+                
+                .row.align-items-center
+                    .col-md-8
+                        video.solution-img(src="assets/videos/solution-2.mp4" autoplay loop muted)
+                    .col-md-4.solution-content
+                        h2.section-heading.text-uppercase Our Solution
+                        h3.text-center Autonomy as a Service
+                        //- span Leading with our core value proposition:
+                        //- ul 
+                        //-     li 
+                        //-         | Subscription-based navigation platform
+                        //-     li 
+                        //-         | Proven technology from leading UK research institution
+                        //-     li     
+                        //-         | Rapid integration and deployment
+ 
         // Services
         section#services.page-section.bg-primary
             .container
