@@ -2,15 +2,6 @@
 // Masthead section styling
 //
 
-@keyframes header_bg_animation {
-    from {
-        background-position: -100% center;
-    }
-    to {
-        background-position: center center;
-    }
-}
-
 header.masthead {
     padding-top: 6rem + 4.5rem;
     padding-bottom: 6rem;
@@ -20,9 +11,7 @@ header.masthead {
     background-attachment: scroll;
     background-position: center center;
     background-size: cover;
-    transition: background-image 1s ease-in-out; // Smooth transition
-    animation: header_bg_animation 1s ease-in-out; // Apply sliding animation
-
+    transition: background-image 5s linear; // Smooth transition
 
     .masthead-subheading {
         font-size: 1.5rem;

@@ -2,37 +2,6 @@
 // Scripts
 //
 
-const images = [
-  "../assets/img/bg/header-bg-2.jpg",
-  "../assets/img/bg/header-bg-3.jpg",
-  "../assets/img/bg/header-bg-4.jpg",
-  "../assets/img/bg/header-bg-5.jpg",
-  "../assets/img/bg/header-bg-6.jpg",
-];
-
-// bg image carousal
-let currentIndex = 0;
-const masthead = document.querySelector("header.masthead");
-
-function changeBackgroundImage() {
-  // Apply the new background image
-  masthead.style.backgroundImage = `url(${images[currentIndex]})`;
-
-  // Add the sliding animation class
-  masthead.classList.add("slide-animation");
-
-  // Remove the animation class after it completes (1s)
-  setTimeout(() => {
-    masthead.classList.remove("slide-animation");
-  }, 1000);
-
-  // Update the index
-  currentIndex = (currentIndex + 1) % images.length;
-}
-
-// Set the interval for changing the image
-setInterval(changeBackgroundImage, 5000);
-
 window.addEventListener("DOMContentLoaded", (event) => {
   // Navbar shrink function
   var navbarShrink = function () {
@@ -74,4 +43,25 @@ window.addEventListener("DOMContentLoaded", (event) => {
       }
     });
   });
+
+
+const images = [
+  "../assets/img/bg/header-bg-2.jpg",
+  "../assets/img/bg/header-bg-3.jpg",
+  "../assets/img/bg/header-bg-4.jpg",
+  "../assets/img/bg/header-bg-5.jpg",
+  "../assets/img/bg/header-bg-6.jpg",
+];
+
+let currentIndex = 0;
+const masthead = document.querySelector("header.masthead");
+
+changeBackgroundImage = () => {
+  masthead.style.backgroundImage = `url(${images[currentIndex]})`;
+  currentIndex = (currentIndex + 1) % images.length;
+}
+
+changeBackgroundImage()
+setInterval(changeBackgroundImage, 5000);
+
 });
