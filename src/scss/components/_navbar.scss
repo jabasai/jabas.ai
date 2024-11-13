@@ -30,7 +30,7 @@
     }
 
     .navbar-brand-name { 
-        font-size: 2.5rem;
+        font-size: 2.0rem;
         color: $primary;
         font-family: $headings-font-family;
         font-weight: $headings-font-weight;
@@ -76,6 +76,10 @@
                 height: 2rem;
                 transition: height 0.3s ease-in-out;
             }
+        }
+
+        .navbar-brand-name { 
+            font-size: 3.5rem;
         }
 
         // Styling for when the navbar shrinks on larger screens

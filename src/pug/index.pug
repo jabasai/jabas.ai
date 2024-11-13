@@ -59,7 +59,7 @@ html(lang='en')
 
 
         // Problem 
-        section#problem.problem 
+        section#problem.page-section.bg-primary
             .container-fluid
                 h2.section-heading.text-center.text-info.text-uppercase Problem Statement
                 .row.text-center    
@@ -81,7 +81,7 @@ html(lang='en')
 
 
         // Solution 
-        section#solution.solution 
+        section#solution.page-section.bg-dark
             .container-fluid
                 h2.section-heading.text-center.text-primary.text-uppercase Our Solution
                 .row.text-center    
@@ -357,7 +357,9 @@ html(lang='en')
                             //- | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
 
         // Clients
-        div#partners.py-5.bg-dark
+        //- div#partners.py-5.bg-dark
+        //- div#partners.py-5.bg-dark
+        section#partners.page-section.bg-dark
             .container
                 h2.section-heading.text-uppercase.text-primary.text-center Our Partners
                 .row.align-items-center
@@ -379,8 +381,8 @@ html(lang='en')
             .container
                 .text-center
                     h2.section-heading.text-uppercase.text-info Contact Us
-                    h3.section-subheading.large.text-dark Email us at 
-                        a(href='mailto:info@jabas.ai') info@jabas.ai
+                    h3.section-subheading.large.text-info Email us at 
+                        a.text-info(href='mailto:info@jabas.ai') info@jabas.ai
                     
 
                 //- // * * * * * * * * * * * * * * *
