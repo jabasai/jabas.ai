@@ -27,7 +27,7 @@ html(lang='en')
 
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.navbar-info.fixed-top
-            .container
+            .container-fluid.justify-content-between 
                 a.navbar-brand(href='#page-top')
                     //- img(src='assets/img/logos/jabas-2.png', alt='...' width=200)
                     .h2.navbar-brand-name JABAS
@@ -64,18 +64,21 @@ html(lang='en')
                 h2.section-heading.text-center.text-info.text-uppercase Problem Statement
                 .row.text-center    
                     .col-md-4
-                        img.problem-img(src='assets/img/problem/problem-1.png', alt='...' )
-                        span.muted-text.problem-content
-                            | <br> Agricultural environments pose unique navigation challenges
+                        .problem-img-wrapper
+                            img.problem-img(src='assets/img/problem/problem-1.png', alt='...' )
+                            span.problem-img-text
+                                | Agricultural environments pose unique navigation challenges
                     .col-md-4
-                        img.problem-img(src='assets/img/problem/problem-2.png', alt='...' )
-                        span.muted-text.problem-content
-                            | <br> SMEs waste resources reinventing navigation solutions
+                        .problem-img-wrapper
+                            img.problem-img(src='assets/img/problem/problem-2.png', alt='...' )
+                            span.problem-img-text
+                                | SMEs waste resources reinventing navigation solutions
                     .col-md-4
-                        img.problem-img(src='assets/img/problem/problem-3.png', alt='...' )
-                        span.muted-text.problem-content
-                            | <br> Current solutions require extensive human oversight
-                    
+                        .problem-img-wrapper
+                            img.problem-img(src='assets/img/problem/problem-3.png', alt='...' )
+                            span.problem-img-text
+                                | Current solutions require extensive human oversight
+
 
         // Solution 
         section#solution.solution 
@@ -279,13 +282,13 @@ html(lang='en')
             .container
                 .text-center
                     h2.section-heading.text-uppercase.text-info Our Amazing Team
-                    //- h3.section-subheading.text-muted Meet our amazing team.
+                    h3.section-subheading.text-info Meet our amazing team.
                 .row
                     .col-lg-4
                         .team-member
                             img.mx-auto.rounded-circle(src='assets/img/team/Marc.jpg', alt='...')
-                            h4 Marc Hanheide
-                            p.text-muted Team Lead
+                            h4.text-dark Marc Hanheide
+                            p.text-info Team Lead
                             a.btn.btn-info.btn-social.mx-2(href='https://github.com/marc-hanheide', aria-label='Marc Hanheide GitHub Profile')
                                 i.fab.fa-github
                             //- a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Marc HanheideFacebook Profile')
@@ -295,8 +298,8 @@ html(lang='en')
                     .col-lg-4
                         .team-member
                             img.mx-auto.rounded-circle(src='assets/img/team/Gautam.png', alt='...')
-                            h4 Gautham Das
-                            p.text-muted Fleet Operation Lead
+                            h4.text-dark Gautham Das
+                            p.text-info Fleet Operation Lead
                             a.btn.btn-info.btn-social.mx-2(href='https://github.com/GPrathap', aria-label='Gautham Das GitHub Profile')
                                 i.fab.fa-github
                             //- a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Marc HanheideFacebook Profile')
@@ -307,8 +310,8 @@ html(lang='en')
                     .col-lg-4
                         .team-member
                             img.mx-auto.rounded-circle(src='assets/img/team/Greg.png', alt='...')
-                            h4 Grzegorz Cielniak
-                            p.text-muted Perception Lead
+                            h4.text-dark Grzegorz Cielniak
+                            p.text-info Perception Lead
                             a.btn.btn-info.btn-social.mx-2(href='https://github.com/gcielniak', aria-label='Grzegorz Cielniak GitHub Profile')
                                 i.fab.fa-github
                             //- a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Ibrahim Hroob Facebook Profile')
@@ -318,8 +321,8 @@ html(lang='en')
                     .col-lg-4
                         .team-member
                             img.mx-auto.rounded-circle(src='assets/img/team/Ibrahim.jpg', alt='...')
-                            h4 Ibrahim Hroob
-                            p.text-muted Robotics Software Engineer
+                            h4.text-dark Ibrahim Hroob
+                            p.text-info Robotics Software Engineer
                             a.btn.btn-info.btn-social.mx-2(href='https://github.com/ibrahimhroob', aria-label='Ibrahim Hroob GitHub Profile')
                                 i.fab.fa-github
                             //- a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Ibrahim Hroob Facebook Profile')
@@ -329,8 +332,8 @@ html(lang='en')
                     .col-lg-4
                         .team-member
                             img.mx-auto.rounded-circle(src='assets/img/team/James.jpg', alt='...')
-                            h4 James Heselden
-                            p.text-muted AI Software Engineer
+                            h4.text-dark James Heselden
+                            p.text-info AI Software Engineer
                             a.btn.btn-info.btn-social.mx-2(href='https://github.com/Iranaphor', aria-label='James Heselden GitHub Profile')
                                 i.fab.fa-github
                             //- a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Arshad Khan Facebook Profile')
@@ -340,8 +343,8 @@ html(lang='en')
                     .col-lg-4
                         .team-member
                             img.mx-auto.rounded-circle(src='assets/img/team/Arshad.jpg', alt='...')
-                            h4 Arshad Khan
-                            p.text-muted Backend Software Engineer
+                            h4.text-dark Arshad Khan
+                            p.text-info Backend Software Engineer
                             a.btn.btn-info.btn-social.mx-2(href='https://github.com/arsh09', aria-label='Arshad Khan GitHub Profile')
                                 i.fab.fa-github
                             //- a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Arshad Khan Facebook Profile')
@@ -464,7 +467,7 @@ html(lang='en')
 
         // Footer
         footer.footer.py-4.bg-dark
-            .container.text-primary
+            .container-fluid.text-primary
                 .row.align-items-center
                     .col-lg-4.text-lg-start
                         | Copyright &copy; JABAS 2024
@@ -476,8 +479,8 @@ html(lang='en')
                         a.btn.btn-primary.btn-social.mx-2(href='https://www.linkedin.com/company/jabas/', aria-label='LinkedIn')
                             i.fab.fa-linkedin-in
                     .col-lg-4.text-lg-end
-                        a.link-dark.text-decoration-none.me-3(href='#!') Privacy Policy
-                        a.link-dark.text-decoration-none(href='#!') Terms of Use
+                        a.link-primary.text-decoration-none.me-3(href='#!') Privacy Policy
+                        a.link-primary.text-decoration-none(href='#!') Terms of Use
 
         // Portfolio Modals
         include includes/portfolio-modal-1

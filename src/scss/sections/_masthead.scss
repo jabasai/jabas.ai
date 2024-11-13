@@ -6,7 +6,6 @@ header.masthead {
     padding-top: 6rem + 4.5rem;
     padding-bottom: 6rem;
     text-align: center;
-    color: $white;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -22,13 +21,9 @@ header.masthead {
         font-family: $subheadings-font-family;
         color  : $info;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
-
-
         background-color: rgba(white, 0.2); 
         padding: 5px 10px;  
-        // display: inline-block; 
         border-radius: 10px;  
-
     }
 
     .masthead-heading {
