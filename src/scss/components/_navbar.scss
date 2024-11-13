@@ -9,12 +9,12 @@
     background-color: $dark;
 
     .navbar-toggler {
-
         padding: 0.75rem;
-        font-size: 0.75rem;
+        font-size: 1.0rem;
         font-family: $headings-font-family;
         text-transform: uppercase;
         font-weight: $font-weight-bold;
+        color : $primary;
     }
 
     .navbar-brand {
@@ -27,6 +27,16 @@
         img {
             height: 1.5rem;
         }
+    }
+
+    .navbar-brand-name { 
+        font-size: 3.5rem;
+        color: $primary;
+        font-family: $headings-font-family;
+        font-weight: $headings-font-weight;
+        letter-spacing: $headings-letter-spacing;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
     }
 
     .navbar-nav {
@@ -44,6 +54,7 @@
             }
         }
     }
+ 
 }
 
 // Responsive styling for screen width equal to or greater than the large breakpoint

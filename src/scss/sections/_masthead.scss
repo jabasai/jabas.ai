@@ -31,6 +31,8 @@ header.masthead {
         margin-bottom: 25px;
         font-family: $subheadings-font-family;
         color  : $info;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+
 
         background-color: rgba(white, 0.2); 
         padding: 5px 10px;  
@@ -46,6 +48,7 @@ header.masthead {
         margin-bottom: 2rem;
         font-family: $headings-font-family;
         color  : $info;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
 
         background-color: rgba(aliceblue, 0.4); 
         padding: 5px 10px;  
