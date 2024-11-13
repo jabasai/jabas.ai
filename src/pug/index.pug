@@ -37,13 +37,17 @@ html(lang='en')
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.text-uppercase.ms-auto.py-4.py-lg-0
                         li.nav-item
+                            a.nav-link(href='#problem') Problem
+                        li.nav-item
+                            a.nav-link(href='#solution') Solution
+                        li.nav-item
                             a.nav-link(href='#services') Services
-                        //- li.nav-item
-                        //-     a.nav-link(href='#portfolio') Portfolio
                         li.nav-item
                             a.nav-link(href='#about') About
                         li.nav-item
                             a.nav-link(href='#team') Team
+                        li.nav-item
+                            a.nav-link(href='#partners') Partners
                         li.nav-item
                             a.nav-link(href='#contact') Contact
         // Masthead
@@ -53,8 +57,43 @@ html(lang='en')
                 .masthead-subheading Taking the pain out of getting robots and AI onto the fields 
                 a.btn.btn-info.btn-xl.text-uppercase(href='#services') Tell Me More
 
+
+        // Problem 
+        section#problem.problem 
+            .container-fluid
+                h2.problem-heading.text-center.text-dark Problem Statement
+                .row.text-center    
+                    .col-md-4
+                        img.problem-img(src='assets/img/problem/problem-1.png', alt='...' )
+                        span.muted-text.problem-content
+                            | <br> Agricultural environments pose unique navigation challenges
+                    .col-md-4
+                        img.problem-img(src='assets/img/problem/problem-2.png', alt='...' )
+                        span.muted-text.problem-content
+                            | <br> SMEs waste resources reinventing navigation solutions
+                    .col-md-4
+                        img.problem-img(src='assets/img/problem/problem-3.png', alt='...' )
+                        span.muted-text.problem-content
+                            | <br> Current solutions require extensive human oversight
+                    
+
+        // Solution 
+        section#solution.solution 
+            .container-fluid
+                h2.solution-heading.text-center.text-primary Our Solution
+                .row.text-center    
+                    .col-md-4
+                        span.muted-text
+                            | <br> Agricultural environments pose unique navigation challenges
+                    .col-md-4
+                        span.muted-text 
+                            | <br> SMEs waste resources reinventing navigation solutions
+                    .col-md-4
+                        span.muted-text 
+                            | <br> Current solutions require extensive human oversight
+                    
         // Services
-        section#services.page-section
+        section#services.page-section.bg-primary
             .container
                 .text-center
                     h2.section-heading.text-uppercase Services
@@ -168,25 +207,24 @@ html(lang='en')
                                 .portfolio-caption-subheading.text-muted Photography
 
         // Our Story
-        section#about.page-section
+        section#about.page-section.bg-dark
             .container
-                .text-center
+                .text-center.text-primary
                     h2.section-heading.text-uppercase Our Story
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
-                ul.timeline(hidden='true')
+                    //- h3.section-subheading.text-muted.text-primary Lorem ipsum dolor sit amet consectetur.
+                //- ul.timeline(hidden='true')
+                ul.timeline
                     li
                         .timeline-image
                             img.rounded-circle.img-fluid(src='assets/img/about/1.jpg', alt='...')
                         .timeline-panel
                             .timeline-heading
                                 //- h4 2009-2011
-                                h4.subheading Problem Statement
+                                h4.subheading.text-primary Day 1
                             .timeline-body
                                 p.text-muted
                                     //- ol 
-                                    span  Agricultural environments pose unique navigation challenges <br/>
-                                    span  SMEs waste resources reinventing navigation solutions<br/>
-                                    span  Current solutions require extensive human oversight<br/>
+                                    span  JABAS emerged from pioneering research at the University of Lincoln's Centre for Autonomous Systems, backed by £4 million of industry and Innovate UK funding.<br/>
 
                                         
                     li.timeline-inverted
@@ -194,33 +232,35 @@ html(lang='en')
                             img.rounded-circle.img-fluid(src='assets/img/about/2.jpg', alt='...')
                         .timeline-panel
                             .timeline-heading
-                                h4 March 2011
-                                h4.subheading An Agency is Born
+                                //- h4 March 2011
+                                h4.subheading.text-primary First Trials
                             .timeline-body
                                 p.text-muted
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+                                    span Working with leading agri-tech partners like Dogtooth Technologies and Berry Gardens Growers, we developed and refined our navigation solutions across diverse agricultural environments.
                     li
                         .timeline-image
                             img.rounded-circle.img-fluid(src='assets/img/about/3.jpg', alt='...')
                         .timeline-panel
                             .timeline-heading
-                                h4 December 2015
-                                h4.subheading Transition to Full Service
+                                //- h4 December 2015
+                                h4.subheading.text-primary Research-backed
                             .timeline-body
-                                p.text-muted
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+                                p.text-muted.text-primary
+                                    span Our research, published in Nature and other leading Robotics Journals, and validated through successful field deployments, identified a crucial need.
+                    
                     li.timeline-inverted
                         .timeline-image
                             img.rounded-circle.img-fluid(src='assets/img/about/4.jpg', alt='...')
                         .timeline-panel
-                            .timeline-heading
-                                h4 July 2020
-                                h4.subheading Phase Two Expansion
+                            .timeline-heading.text-primary
+                                //- h4 July 2020
+                                h4.subheading.text-primary Ready to takeoff
                             .timeline-body
                                 p.text-muted
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+                                    | To get robotics work reliably and safely in the world’s field to deliver innovative farming solutions.
+                    
                     li.timeline-inverted
-                        .timeline-image
+                        .timeline-image.text-dark
                             h4
                                 | Be Part
                                 br
@@ -229,7 +269,7 @@ html(lang='en')
                                 | Story!
 
         // Team
-        section#team.page-section.bg-light
+        section#team.page-section.bg-primary
             .container
                 .text-center
                     h2.section-heading.text-uppercase Our Amazing Team
@@ -308,8 +348,9 @@ html(lang='en')
                             //- | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
 
         // Clients
-        div.py-5
+        div#partners.py-5.bg-dark
             .container
+                h2.text-center.text-primary Our Partners
                 .row.align-items-center
                     .col-md-3.col-sm-6.my-3
                         a(href='https://www.bggrowers.co.uk/')
@@ -325,11 +366,11 @@ html(lang='en')
                     //-         img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/ibm.svg', alt='...', aria-label='IBM Logo')
 
         // Contact
-        section#contact.page-section
+        section#contact.page-section.bg-primary
             .container
                 .text-center
-                    h2.section-heading.text-uppercase Contact Us
-                    h3.section-subheading.large Email us at 
+                    h2.section-heading.text-uppercase.text-dark Contact Us
+                    h3.section-subheading.large.text-dark Email us at 
                         a(href='mailto:info@jabas.ai') info@jabas.ai
                     
 
@@ -416,8 +457,8 @@ html(lang='en')
                 //-         button#submitButton.btn.btn-primary.btn-xl.text-uppercase.disabled(type='submit') Send Message
 
         // Footer
-        footer.footer.py-4
-            .container
+        footer.footer.py-4.bg-dark
+            .container.text-primary
                 .row.align-items-center
                     .col-lg-4.text-lg-start
                         | Copyright &copy; JABAS 2024
@@ -426,7 +467,7 @@ html(lang='en')
                         //-     i.fab.fa-twitter
                         //- a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Facebook')
                         //-     i.fab.fa-facebook-f
-                        a.btn.btn-dark.btn-social.mx-2(href='https://www.linkedin.com/company/jabas/', aria-label='LinkedIn')
+                        a.btn.btn-primary.btn-social.mx-2(href='https://www.linkedin.com/company/jabas/', aria-label='LinkedIn')
                             i.fab.fa-linkedin-in
                     .col-lg-4.text-lg-end
                         a.link-dark.text-decoration-none.me-3(href='#!') Privacy Policy

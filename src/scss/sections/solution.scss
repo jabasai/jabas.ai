@@ -1,4 +1,4 @@
-.problem {
+.solution {
 
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -9,23 +9,23 @@
     background-attachment: scroll;
     background-position: center center;
     background-size: cover;
-    background-color: $primary;
+    background-color: $dark;
     // background-image: url("../assets/img/bg/header-bg-7.png");
  
-    .problem-heading { 
+    .solution-heading { 
         color: $dark;
         font-size: 2.75rem;
         padding-bottom: 2rem;
     }
 
-    .problem-content { 
+    .solution-content { 
         font-size: 1.25rem;
         padding: 2rem;
         color : $info;
 
     }
 
-    .problem-img { 
+    .solution-img { 
         width: 30rem;
         border: 0.25rem solid fade-out($dark, 0.9);
     }
