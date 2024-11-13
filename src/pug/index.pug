@@ -11,7 +11,7 @@ html(lang='en')
         title JABAS AI
 
         // Favicon
-        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+        link(rel='icon', type='image/x-icon', href='./../assets/img/logos/jabas-3.ico')
 
         // Font Awesome icons (free version)
         script(src='https://use.fontawesome.com/releases/v6.3.0/js/all.js', crossorigin='anonymous')
@@ -26,60 +26,117 @@ html(lang='en')
     body#page-top
 
         // Navigation
-        nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
-            .container
+        nav#mainNav.navbar.navbar-expand-lg.navbar-info.fixed-top
+            .container-fluid.justify-content-between 
                 a.navbar-brand(href='#page-top')
-                    //- img(src='assets/img/navbar-logo.svg', alt='...')
+                    //- img(src='assets/img/logos/jabas-2.png', alt='...' width=200)
+                    .h2.navbar-brand-name JABAS
                 button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     | Menu
-                    i.fas.fa-bars.ms-1
+                    i.fas.fa-bars.ms-1.text-primary
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.text-uppercase.ms-auto.py-4.py-lg-0
                         li.nav-item
-                            a.nav-link(href='#services') Services
+                            a.nav-link(href='#problem') Problem
                         li.nav-item
-                            a.nav-link(href='#portfolio') Portfolio
+                            a.nav-link(href='#solution') Solution
+                        li.nav-item
+                            a.nav-link(href='#services') Services
                         li.nav-item
                             a.nav-link(href='#about') About
                         li.nav-item
                             a.nav-link(href='#team') Team
+                        //- li.nav-item
+                        //-     a.nav-link(href='#partners') Partners
                         li.nav-item
                             a.nav-link(href='#contact') Contact
         // Masthead
         header.masthead
             .container
-                .masthead-subheading Hello from JABAS!
-                .masthead-heading.text-uppercase It's Nice To Meet You
-                a.btn.btn-primary.btn-xl.text-uppercase(href='#services') Tell Me More
+                .masthead-heading.text-uppercase Platform-independent navigation solutions for agricultural robotics
+                .masthead-subheading Taking the pain out of getting robots and AI onto the fields 
+                a.btn.btn-info.btn-xl.text-uppercase(href='#problem') Tell Me More
 
+
+        // Problem 
+        section#problem.page-section.bg-primary
+            .container-fluid
+                h2.section-heading.text-center.text-info.text-uppercase Problem Statement
+                .row.text-center    
+                    .col-md-4
+                        .problem-img-wrapper
+                            img.problem-img(src='assets/img/problem/problem-1.png', alt='...' )
+                            span.problem-img-text
+                                | Agricultural environments pose unique navigation challenges
+                    .col-md-4
+                        .problem-img-wrapper
+                            img.problem-img(src='assets/img/problem/problem-2.png', alt='...' )
+                            span.problem-img-text
+                                | SMEs waste resources reinventing navigation solutions
+                    .col-md-4
+                        .problem-img-wrapper
+                            img.problem-img(src='assets/img/problem/problem-3.png', alt='...' )
+                            span.problem-img-text
+                                | Current solutions require extensive human oversight
+
+
+        // Solution 
+        section#solution.page-section.bg-dark
+            .container-fluid
+                
+                .row.align-items-center
+                    .col-md-8
+                        video.solution-img(src="assets/videos/solution-2.mp4" autoplay loop muted)
+                    .col-md-4.solution-content
+                        h2.section-heading.text-uppercase Our Solution
+                        h3.text-center Autonomy as a Service
+                        //- span Leading with our core value proposition:
+                        //- ul 
+                        //-     li 
+                        //-         | Subscription-based navigation platform
+                        //-     li 
+                        //-         | Proven technology from leading UK research institution
+                        //-     li     
+                        //-         | Rapid integration and deployment
+ 
         // Services
-        section#services.page-section
+        section#services.page-section.bg-primary
             .container
                 .text-center
-                    h2.section-heading.text-uppercase Services
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+                    h2.section-heading.text-uppercase.text-info Services
                 .row.text-center
                     .col-md-4
                         span.fa-stack.fa-4x
-                            i.fas.fa-circle.fa-stack-2x.text-primary
-                            i.fas.fa-shopping-cart.fa-stack-1x.fa-inverse
-                        h4.my-3 E-Commerce
+                            i.fas.fa-circle.fa-stack-2x.text-info
+                            i.fas.fa-compass.fa-stack-1x.fa-inverse
+                        h4.my-3.text-dark Reliable Navigation
                         p.text-muted
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+                            | Advanced localisation algorithms  <br/>
+                            | Agricultural-specific motion planning  <br/>
+                            | Proven reliability in field conditions <br/>
+                            | Safety-first approach <br/>
+
                     .col-md-4
                         span.fa-stack.fa-4x
-                            i.fas.fa-circle.fa-stack-2x.text-primary
-                            i.fas.fa-laptop.fa-stack-1x.fa-inverse
-                        h4.my-3 Responsive Design
+                            i.fas.fa-circle.fa-stack-2x.text-info
+                            i.fas.fa-layer-group.fa-stack-1x.fa-inverse
+                        h4.my-3.text-dark Rapid Deployment
                         p.text-muted
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+                            | Quick integration with existing platforms  <br/>
+                            | Standardised interfaces <br/>
+                            | Efficient environment mapping <br/>
+                            | Remote support and monitoring <br/>
                     .col-md-4
                         span.fa-stack.fa-4x
-                            i.fas.fa-circle.fa-stack-2x.text-primary
-                            i.fas.fa-lock.fa-stack-1x.fa-inverse
-                        h4.my-3 Web Security
+                            i.fas.fa-circle.fa-stack-2x.text-info
+                            i.fas.fa-laptop-code.fa-stack-1x.fa-inverse
+                        h4.my-3.text-dark Fleet Management
                         p.text-muted
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+                            | AI-enabled coordination <br/>
+                            | Reduced human oversight <br/>
+                            | Real-time performance monitoring <br/>
+                            | Scalable operations <br/>
+
 
         // Portfolio Grid
         section#portfolio.page-section.bg-light(hidden='true')
@@ -155,131 +212,175 @@ html(lang='en')
                                 .portfolio-caption-heading Window
                                 .portfolio-caption-subheading.text-muted Photography
 
-        // About
-        section#about.page-section
+        // Our Story
+        section#about.page-section.bg-dark
             .container
-                .text-center
-                    h2.section-heading.text-uppercase About
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
-                ul.timeline(hidden='true')
+                .text-center.text-primary
+                    h2.section-heading.text-uppercase Our Story
+                    //- h3.section-subheading.text-muted.text-primary Lorem ipsum dolor sit amet consectetur.
+                //- ul.timeline(hidden='true')
+                ul.timeline
                     li
                         .timeline-image
                             img.rounded-circle.img-fluid(src='assets/img/about/1.jpg', alt='...')
                         .timeline-panel
                             .timeline-heading
-                                h4 2009-2011
-                                h4.subheading Our Humble Beginnings
+                                //- h4 2009-2011
+                                h4.subheading.text-primary Day 0
                             .timeline-body
                                 p.text-muted
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+                                    //- ol 
+                                    span  JABAS emerged from pioneering research at the University of Lincoln's Centre for Autonomous Systems, backed by £4 million of industry and Innovate UK funding.<br/>
+
+                                        
                     li.timeline-inverted
                         .timeline-image
                             img.rounded-circle.img-fluid(src='assets/img/about/2.jpg', alt='...')
                         .timeline-panel
                             .timeline-heading
-                                h4 March 2011
-                                h4.subheading An Agency is Born
+                                //- h4 March 2011
+                                h4.subheading.text-primary First Trials
                             .timeline-body
                                 p.text-muted
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+                                    span Working with leading agri-tech partners like Dogtooth Technologies and Berry Gardens Growers, we developed and refined our navigation solutions across diverse agricultural environments.
                     li
                         .timeline-image
                             img.rounded-circle.img-fluid(src='assets/img/about/3.jpg', alt='...')
                         .timeline-panel
                             .timeline-heading
-                                h4 December 2015
-                                h4.subheading Transition to Full Service
+                                //- h4 December 2015
+                                h4.subheading.text-primary Research-backed
                             .timeline-body
-                                p.text-muted
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+                                p.text-muted.text-primary
+                                    span Our research, published in Nature and other leading Robotics Journals, and validated through successful field deployments, identified a crucial need.
+                    
                     li.timeline-inverted
                         .timeline-image
                             img.rounded-circle.img-fluid(src='assets/img/about/4.jpg', alt='...')
                         .timeline-panel
-                            .timeline-heading
-                                h4 July 2020
-                                h4.subheading Phase Two Expansion
+                            .timeline-heading.text-primary
+                                //- h4 July 2020
+                                h4.subheading.text-primary Ready to takeoff
                             .timeline-body
-                                p.text-muted
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-                    li.timeline-inverted
-                        .timeline-image
+                                p.text-muted.primary-text
+                                    span We invite innovative agri-robotics manufacturers to become part of our success story. Get in touch to learn how our proven navigation technology can accelerate your journey to market.
+                    
+                    li.timeline
+                        .timeline-image.text-dark
                             h4
                                 | Be Part
                                 br
                                 | Of Our
                                 br
                                 | Story!
-
+                        .timeline-panel
+                            .timeline-heading.text-primary
+                                //- h4 July 2020
+                                h4.subheading.text-primary Our offer
+                            .timeline-body
+                                p.text-muted
+                                    | To get robotics work reliably and safely in the world’s field to deliver innovative farming solutions.
+                    
         // Team
-        section#team.page-section.bg-light
+        section#team.page-section.bg-primary
             .container
                 .text-center
-                    h2.section-heading.text-uppercase Our Amazing Team
-                    h3.section-subheading.text-muted Meet our amazing team.
+                    h2.section-heading.text-uppercase.text-info Our Amazing Team
+                    h3.section-subheading.text-info Meet our amazing team.
                 .row
                     .col-lg-4
                         .team-member
-                            img.mx-auto.rounded-circle(src='assets/img/team/mhanheide.jpg', alt='...')
-                            h4 Marc Hanheide
-                            p.text-muted Team Lead
-                            //- a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Marc Hanheide Twitter Profile')
-                            //-     i.fab.fa-twitter
+                            img.mx-auto.rounded-circle(src='assets/img/team/Marc.jpg', alt='...')
+                            h4.text-dark Marc Hanheide
+                            p.text-info Team Lead
+                            a.btn.btn-info.btn-social.mx-2(href='https://github.com/marc-hanheide', aria-label='Marc Hanheide GitHub Profile')
+                                i.fab.fa-github
                             //- a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Marc HanheideFacebook Profile')
                             //-     i.fab.fa-facebook-f
-                            a.btn.btn-dark.btn-social.mx-2(href='https://www.linkedin.com/in/marc-hanheide/', aria-label='Marc Hanheide LinkedIn Profile')
+                            a.btn.btn-info.btn-social.mx-2(href='https://www.linkedin.com/in/marc-hanheide/', aria-label='Marc Hanheide LinkedIn Profile')
                                 i.fab.fa-linkedin-in
                     .col-lg-4
                         .team-member
-                            img.mx-auto.rounded-circle(src='assets/img/team/2.jpg', alt='...')
-                            h4 Ibrahim Hroob
-                            p.text-muted Senior Robotics Researcher
-                            //- a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Ibrahim Hroob Twitter Profile')
-                            //-     i.fab.fa-twitter
-                            //- a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Ibrahim Hroob Facebook Profile')
+                            img.mx-auto.rounded-circle(src='assets/img/team/Gautam.png', alt='...')
+                            h4.text-dark Gautham Das
+                            p.text-info Fleet Operation Lead
+                            a.btn.btn-info.btn-social.mx-2(href='https://github.com/GPrathap', aria-label='Gautham Das GitHub Profile')
+                                i.fab.fa-github
+                            //- a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Marc HanheideFacebook Profile')
                             //-     i.fab.fa-facebook-f
-                            //- a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Ibrahim Hroob LinkedIn Profile')
-                            //-     i.fab.fa-linkedin-in
+                            a.btn.btn-info.btn-social.mx-2(href='https://www.linkedin.com/in/gpdas/', aria-label='Gautham Das LinkedIn Profile')
+                                i.fab.fa-linkedin-in
+                    
                     .col-lg-4
                         .team-member
-                            img.mx-auto.rounded-circle(src='assets/img/team/3.jpg', alt='...')
-                            h4 Arshad Khan
-                            p.text-muted Robotics Software Engineer
-                            //- a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Arshad Khan Twitter Profile')
-                            //-     i.fab.fa-twitter
+                            img.mx-auto.rounded-circle(src='assets/img/team/Greg.png', alt='...')
+                            h4.text-dark Grzegorz Cielniak
+                            p.text-info Perception Lead
+                            a.btn.btn-info.btn-social.mx-2(href='https://github.com/gcielniak', aria-label='Grzegorz Cielniak GitHub Profile')
+                                i.fab.fa-github
+                            //- a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Ibrahim Hroob Facebook Profile')
+                            //-     i.fab.fa-facebook-f
+                            a.btn.btn-info.btn-social.mx-2(href='#!', aria-label='Grzegorz Cielniak LinkedIn Profile')
+                                i.fab.fa-linkedin-in
+                    .col-lg-4
+                        .team-member
+                            img.mx-auto.rounded-circle(src='assets/img/team/Ibrahim.jpg', alt='...')
+                            h4.text-dark Ibrahim Hroob
+                            p.text-info Robotics Software Engineer
+                            a.btn.btn-info.btn-social.mx-2(href='https://github.com/ibrahimhroob', aria-label='Ibrahim Hroob GitHub Profile')
+                                i.fab.fa-github
+                            //- a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Ibrahim Hroob Facebook Profile')
+                            //-     i.fab.fa-facebook-f
+                            a.btn.btn-info.btn-social.mx-2(href='https://www.linkedin.com/in/ibrahim-hroob/', aria-label='Ibrahim Hroob LinkedIn Profile')
+                                i.fab.fa-linkedin-in
+                    .col-lg-4
+                        .team-member
+                            img.mx-auto.rounded-circle(src='assets/img/team/James.jpg', alt='...')
+                            h4.text-dark James Heselden
+                            p.text-info AI Software Engineer
+                            a.btn.btn-info.btn-social.mx-2(href='https://github.com/Iranaphor', aria-label='James Heselden GitHub Profile')
+                                i.fab.fa-github
                             //- a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Arshad Khan Facebook Profile')
                             //-     i.fab.fa-facebook-f
-                            //- a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Arshad Khan LinkedIn Profile')
-                            //-     i.fab.fa-linkedin-in
+                            a.btn.btn-info.btn-social.mx-2(href='https://www.linkedin.com/in/jamesheselden/', aria-label='James Heselden LinkedIn Profile')
+                                i.fab.fa-linkedin-in
+                    .col-lg-4
+                        .team-member
+                            img.mx-auto.rounded-circle(src='assets/img/team/Arshad.jpg', alt='...')
+                            h4.text-dark Arshad Khan
+                            p.text-info Backend Software Engineer
+                            a.btn.btn-info.btn-social.mx-2(href='https://github.com/arsh09', aria-label='Arshad Khan GitHub Profile')
+                                i.fab.fa-github
+                            //- a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Arshad Khan Facebook Profile')
+                            //-     i.fab.fa-facebook-f
+                            a.btn.btn-info.btn-social.mx-2(href='https://www.linkedin.com/in/muhammad-arshad-khan-0910/', aria-label='Arshad Khan LinkedIn Profile')
+                                i.fab.fa-linkedin-in
                 .row
                     .col-lg-8.mx-auto.text-center
                         p.large.text-muted
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
+                            //- | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
 
         // Clients
-        //- div.py-5
+        //- div#partners.py-5.bg-dark
+        //- div#partners.py-5.bg-dark
+        //- section#partners.page-section.bg-dark
         //-     .container
+        //-         h2.section-heading.text-uppercase.text-primary.text-center Our Partners
         //-         .row.align-items-center
         //-             .col-md-3.col-sm-6.my-3
-        //-                 a(href='#!')
-        //-                     img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/microsoft.svg', alt='...', aria-label='Microsoft Logo')
+        //-                 a(href='https://www.bggrowers.co.uk/')
+        //-                     img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/berry-gardens.svg', alt='...', aria-label='Berry Gardens Logo')
         //-             .col-md-3.col-sm-6.my-3
-        //-                 a(href='#!')
-        //-                     img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/google.svg', alt='...', aria-label='Google Logo')
-        //-             .col-md-3.col-sm-6.my-3
-        //-                 a(href='#!')
-        //-                     img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/facebook.svg', alt='...', aria-label='Facebook Logo')
-        //-             .col-md-3.col-sm-6.my-3
-        //-                 a(href='#!')
-        //-                     img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/ibm.svg', alt='...', aria-label='IBM Logo')
-
+        //-                 a(href='https://dogtooth.tech/')
+        //-                     img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/dogtooth.svg', alt='...', aria-label='Dogtooth Technology Logo')
+                    
         // Contact
-        section#contact.page-section
+        section#contact.page-section.bg-primary
             .container
                 .text-center
-                    h2.section-heading.text-uppercase Contact Us
-                    h3.section-subheading.large Email us at 
-                        a(href='mailto:info@jabas.ai') info@jabas.ai
+                    h2.section-heading.text-uppercase.text-info Contact Us
+                    h3.section-subheading.large.text-info Email us at 
+                        a.text-info(href='mailto:info@jabas.ai') info@jabas.ai
                     
 
                 //- // * * * * * * * * * * * * * * *
@@ -365,21 +466,21 @@ html(lang='en')
                 //-         button#submitButton.btn.btn-primary.btn-xl.text-uppercase.disabled(type='submit') Send Message
 
         // Footer
-        footer.footer.py-4
-            .container
+        footer.footer.py-4.bg-dark
+            .container-fluid.text-primary
                 .row.align-items-center
                     .col-lg-4.text-lg-start
                         | Copyright &copy; JABAS 2024
                     .col-lg-4.my-3.my-lg-0
-                        //- a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Twitter')
-                        //-     i.fab.fa-twitter
-                        //- a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Facebook')
-                        //-     i.fab.fa-facebook-f
-                        a.btn.btn-dark.btn-social.mx-2(href='https://www.linkedin.com/company/jabas/', aria-label='LinkedIn')
+                        a.btn.btn-primary.btn-social.mx-2(href='https://www.linkedin.com/company/jabas/', aria-label='LinkedIn')
                             i.fab.fa-linkedin-in
+                        a.btn.btn-primary.btn-social.mx-2(href='#!', aria-label='Twitter')
+                            i.fab.fa-twitter
+                        a.btn.btn-primary.btn-social.mx-2(href='https://github.com/jabasai', aria-label='Github')
+                            i.fab.fa-github
                     .col-lg-4.text-lg-end
-                        a.link-dark.text-decoration-none.me-3(href='#!') Privacy Policy
-                        a.link-dark.text-decoration-none(href='#!') Terms of Use
+                        a.link-primary.text-decoration-none.me-3(href='#!') Privacy Policy
+                        a.link-primary.text-decoration-none(href='#!') Terms of Use
 
         // Portfolio Modals
         include includes/portfolio-modal-1

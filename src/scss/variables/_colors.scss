@@ -4,12 +4,25 @@
 
 // Override Bootstrap color variables
 
-$yellow: #07690c;
+// $yellow: #062925; 
+
+
+$green100 : #b8e1dd; 
+$green200 :  #3a9188; 
+$green300 : #044a42; 
+$green400:  #062925; 
+
+
 
 // Override Bootstrap state colors variables
 
-$primary: $yellow;
+// $primary: $yellow;
+
+$primary : $green100;
+$secondary : $green200;
+$info : $green300;
+$dark : $green400;
+
 
 // Override Bootstrap contrast ratio
-
 $min-contrast-ratio: 1.5;

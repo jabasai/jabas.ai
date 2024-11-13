@@ -1,0 +1,45 @@
+.problem {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    text-align: center;
+    color: $dark;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    background-color: $primary;
+    // background-image: url("../assets/img/bg/header-bg-7.png");
+ 
+}
+
+
+.problem-img-wrapper {
+    position: relative;
+    display: inline-block;
+
+    .problem-img {
+        width: 100%;
+        border: 0.25rem solid fade-out($dark, 0.9);
+        display: block;
+    }
+
+    .problem-img-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $dark;
+        font-size: 1.25rem;
+        font-weight: 700;
+        line-height: 1.5;
+        text-align: center;
+        padding: 0.5rem 1rem;
+
+
+        background-color: rgba(aliceblue, 0.4); 
+        padding: 5px 10px;  
+        display: inline-block; 
+        border-color: aliceblue;
+        border-radius: 10px;  
+    }
+}
