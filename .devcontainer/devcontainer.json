@@ -1,5 +1,6 @@
 {
 	"name": "Jabas AI Wesbite",
+	"image": "lcas.lincoln.ac.uk/jabas/jabas.ai:devcontainer",
 	"build": {
 		"dockerfile": "../Dockerfile",
 		"context": "..",
